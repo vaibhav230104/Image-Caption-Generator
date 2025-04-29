@@ -40,3 +40,16 @@ Run the following command to create the vocabulary:
 ```
 python vocab.py
 ```
+### 2. To train the model, run:
+
+```
+python train.py --model [decoder]
+```
+Replace [decoder] with either lstm or gpt1. The trained model will be saved in the ./src directory.
+
+### 3. Test an Image Instance
+To test the model on an individual image, run:
+```
+python show_instance.py --model [decoder] --image_file [file]
+
+```
